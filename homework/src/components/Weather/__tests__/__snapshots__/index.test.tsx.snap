@@ -25,6 +25,7 @@ Array [
         <input
           className="form-control"
           id="form1"
+          name="searchInput"
           onChange={[Function]}
           placeholder="Search"
           required={true}
@@ -34,6 +35,7 @@ Array [
       <button
         className=" btn btn-primary"
         onClick={[Function]}
+        test-id="searchBtn"
         type="button"
       >
         Search

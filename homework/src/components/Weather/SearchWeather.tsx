@@ -5,12 +5,14 @@ const SearchWeather = ({ setCity, getData }: any) => {
                 <div className="form-outline d-flex">
                     <label className='col'>Search</label>
                     <input
+                        name="searchInput"
                         required
                         onChange={(e) => setCity(e.target.value)}
                         type="search" id="form1" className="form-control" placeholder="Search"
                     />
                 </div>
                 <button
+                    test-id = 'searchBtn'
                     onClick={() => getData()}
                     type="button" className=" btn btn-primary">Search
                 </button>

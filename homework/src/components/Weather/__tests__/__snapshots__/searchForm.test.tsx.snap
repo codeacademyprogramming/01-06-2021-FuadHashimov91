@@ -18,6 +18,7 @@ exports[`Search Weather Component the snapshot 1`] = `
       <input
         className="form-control"
         id="form1"
+        name="searchInput"
         onChange={[Function]}
         placeholder="Search"
         required={true}
@@ -27,6 +28,7 @@ exports[`Search Weather Component the snapshot 1`] = `
     <button
       className=" btn btn-primary"
       onClick={[Function]}
+      test-id="searchBtn"
       type="button"
     >
       Search
