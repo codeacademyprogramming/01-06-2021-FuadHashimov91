@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Search Weather Component the snapshot 1`] = `
+<div
+  className="col-12"
+>
+  <div
+    className="input-group d-flex justify-content-center mt-4"
+  >
+    <div
+      className="form-outline d-flex"
+    >
+      <label
+        className="col"
+      >
+        Search
+      </label>
+      <input
+        className="form-control"
+        id="form1"
+        onChange={[Function]}
+        placeholder="Search"
+        required={true}
+        type="search"
+      />
+    </div>
+    <button
+      className=" btn btn-primary"
+      onClick={[Function]}
+      type="button"
+    >
+      Search
+    </button>
+  </div>
+</div>
+`;

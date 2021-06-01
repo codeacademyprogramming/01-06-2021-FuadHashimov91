@@ -1,8 +1,9 @@
-const SearchWeather = ({ setCity, getData}:any) => {
+const SearchWeather = ({ setCity, getData }: any) => {
     return (
         <div className='col-12'>
             <div className="input-group d-flex justify-content-center mt-4" >
-                <div className="form-outline ">
+                <div className="form-outline d-flex">
+                    <label className='col'>Search</label>
                     <input
                         required
                         onChange={(e) => setCity(e.target.value)}
@@ -11,8 +12,8 @@ const SearchWeather = ({ setCity, getData}:any) => {
                 </div>
                 <button
                     onClick={() => getData()}
-                    type="button" className=" btn btn-primary">Serach
-            </button>
+                    type="button" className=" btn btn-primary">Search
+                </button>
             </div>
         </div>
     )
