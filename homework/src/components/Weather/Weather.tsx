@@ -47,7 +47,7 @@ const Weather = () => {
 
     return (
         <>
-            <h1 className='text-center m-5'>Weather App</h1>
+            <h1 className='text-center m-5' id='head'>Weather App</h1>
             <SearchWeather setCity={setCity} getData={getData} />
             <WeatherList
                 weatherData={weatherData}

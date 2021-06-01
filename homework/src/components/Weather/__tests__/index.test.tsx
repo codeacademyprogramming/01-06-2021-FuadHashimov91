@@ -1,30 +1,27 @@
 import React from 'react';
-import ReactDom from 'react-dom';
+import renderer from "react-test-renderer";
 import Weather from '../Weather';
-import WeatherList from '../WeatherLIst';
+import ReactDOM from 'react-dom';
 
-// import {getByText} from '@testing-library/jest-dom';
+describe('Weather Component', () => {
+    it('the snapshot', () => {
+        const tree = renderer.create(<Weather />).toJSON();
+        expect(tree).toMatchSnapshot()
+    });
 
-// import WeatherList from '../WeatherLIst';
-
-
-//Example Testing
-// const expected = true;
-// const actual = true;
-
-// test("should test dummy function",()=>{
-//     expect(actual).toBe(expected);
-// })
-
-
-test("Test Weather Header", () => {
-    const root = document.createElement('div');
-    ReactDom.render(
-        <WeatherList />,
-        root
-    );
-
+    test("Test Header", () => {
+        const root = document.createElement("div");
+        ReactDOM.render
+        (
+            <Weather />,
+            root
+        );
+        expect(
+            root.querySelector("#head")?.textContent
+        ).toBe('Weather App')
+    })
 })
+
 
 
 
