@@ -16,7 +16,7 @@ const WeatherList = (
                             weatherData !== null ? (
                                 <div className='row'>
                                     <ul className='col-6'>
-                                        <h2 >{weatherData.weather[0].main} | {weatherData.name} | {weatherData.sys.country}</h2>
+                                        <h2 >{weatherData.weather[0].main} |<b data-testid='name'>{weatherData.name}</b>  | {weatherData.sys.country}</h2>
                                         <h2>{weather}</h2>
                                         <h4 id='humidity'>humidity: {(weatherData.main.humidity)}%</h4>
                                     </ul>
