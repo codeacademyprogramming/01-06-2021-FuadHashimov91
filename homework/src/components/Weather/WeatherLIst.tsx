@@ -30,7 +30,6 @@ const WeatherList = (
                                     <div className='col-12'>
                                         <button onClick={handleDelete} className='btn btn-success f-right'>Delete</button>
                                     </div>
- 
                                 </div>
                             ) : null
                         }
